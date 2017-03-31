@@ -27,6 +27,7 @@ int main()
         printf("\n");
 
         scanf("%d",&opcion);
+        printf("\n");
 
         switch(opcion)
         {
@@ -70,7 +71,6 @@ int main()
                 seguir = 'n';
                 break;
         }
-
     }
 
     return 0;

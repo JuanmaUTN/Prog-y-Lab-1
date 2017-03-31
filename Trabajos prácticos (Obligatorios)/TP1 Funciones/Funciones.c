@@ -1,4 +1,6 @@
 #include "Funciones.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 int pedirNumero(int num)
 {
@@ -29,7 +31,7 @@ int dividir2Numeros(int a, int b)
 
     if(b == 0)
     {
-        printf("La division da error.\n");
+        printf("La division da error. (No se puede dividir entre 0)\n");
         return 0;
     }
     else
@@ -59,5 +61,15 @@ int factorizar1Numero(int numIngr)
     }
     printf("La factorizacion de %d da %d.\n", numIngr, resultado);
     return resultado;
+}
+
+int mostrarTablaAscii(int i)
+{
+    printf("TABLA ASCII\n");
+    for(i = 256;i > 0;i --)
+    {
+        printf("( %d = %c )\t",i ,i);
+    }
+    return 0;
 }
 

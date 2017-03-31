@@ -29,7 +29,7 @@ int restar2Numeros(int, int);
 
 
 int dividir2Numeros(int, int);
-/** \brief Divide 2 números. (El programa se rompe si se divide por 0)
+/** \brief Divide 2 números. (El programa se rompe si se divide por 0 (arreglado))
  *
  * \param Recibe número 1.
  * \param Recibe número 2.
@@ -55,3 +55,13 @@ int factorizar1Numero(int);
  * \return Devuelve el resultado de la factorización.
  *
  */
+
+
+ int mostrarTablaAscii();
+ /** \brief Muestra la tabla ASCII.
+  *
+  * \param No recibe nada.
+  * \return No devuelve nada.
+  *
+  */
+
