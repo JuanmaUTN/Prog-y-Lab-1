@@ -6,15 +6,17 @@ int main()
 {
     char seguir='s';
     int opcion=0;
-    int numero1;
-    int numero2;
+    int numero1 = 0;
+    int numero2 = 0;
 
 
     while(seguir=='s')
     {
         printf("\n");
         printf("A: %d, B: %d. \n", numero1, numero2);
-        printf("MENU.\n");
+        printf("======\n");
+        printf(" MENU.\n");
+        printf("======\n");
         printf("1- Ingresar 1er operando. (A=x)\n");
         printf("2- Ingresar 2do operando. (B=y)\n");
         printf("3- Calcular la suma. (A+B)\n");
@@ -32,46 +34,59 @@ int main()
         switch(opcion)
         {
             case 1:
-                numero1 = pedirNumero();
+                system("cls");
+                numero1 = pedirNumeroInt();
                 break;
 
             case 2:
-                numero2 = pedirNumero();
+                system("cls");
+                numero2 = pedirNumeroInt();
                 break;
 
             case 3:
+                system("cls");
                 sumar2Numeros(numero1, numero2);
                 break;
 
             case 4:
+                system("cls");
                 restar2Numeros(numero1, numero2);
                 break;
 
             case 5:
+                system("cls");
                 dividir2Numeros(numero1, numero2);
                 break;
 
             case 6:
+                system("cls");
                 multiplicar2Numeros(numero1, numero2);
                 break;
 
             case 7:
+                system("cls");
                 factorizar1Numero(numero1);
+                factorizar1Numero(numero2);
                 break;
 
             case 8:
+                system("cls");
                 sumar2Numeros(numero1, numero2);
                 restar2Numeros(numero1, numero2);
                 dividir2Numeros(numero1, numero2);
                 multiplicar2Numeros(numero1, numero2);
                 factorizar1Numero(numero1);
+                factorizar1Numero(numero2);
                 break;
 
             case 9:
                 seguir = 'n';
+                system("cls");
+                printf("\n");
+                printf("Gracias vuelva prontos! *Con voz de Apu*\n");
                 break;
         }
-    }
 
+    }
     return 0;
 }

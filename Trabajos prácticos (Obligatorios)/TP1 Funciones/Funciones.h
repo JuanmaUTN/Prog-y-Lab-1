@@ -1,6 +1,6 @@
 
-int pedirNumero();
-/** \brief Pide un numero a través de consola con printf y scanf.
+int pedirNumeroInt();
+/** \brief Pide un numero entero a través de consola con printf y scanf.
  *
  * \param No recibe nada.
  * \return Devuelve el numero que el usuario ingresó por consola.
@@ -64,4 +64,3 @@ int factorizar1Numero(int);
   * \return No devuelve nada.
   *
   */
-

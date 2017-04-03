@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int pedirNumero(int num)
+ //operaciones matemàticas
+
+int pedirNumeroInt(int num)
 {
-    printf("Ingrese un numero: ");
+    printf("Ingrese un numero entero: ");
     scanf("%d", &num);
     return num;
 }
@@ -53,7 +55,7 @@ int multiplicar2Numeros(int a, int b)
 int factorizar1Numero(int numIngr)
 {
     int i;
-    int resultado = 1;
+    long long int resultado = 1;
 
     for(i = numIngr;i > 1;i --)
     {
@@ -63,12 +65,14 @@ int factorizar1Numero(int numIngr)
     return resultado;
 }
 
+ //boludeces
+
 int mostrarTablaAscii(int i)
 {
     printf("TABLA ASCII\n");
     for(i = 256;i > 0;i --)
     {
-        printf("( %d = %c )\t",i ,i);
+        printf("( %d = %c )\n",i ,i);
     }
     return 0;
 }
