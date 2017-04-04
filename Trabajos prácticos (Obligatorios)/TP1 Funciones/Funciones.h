@@ -57,10 +57,28 @@ int factorizar1Numero(int);
  */
 
 
- int mostrarTablaAscii();
- /** \brief Muestra la tabla ASCII.
-  *
-  * \param No recibe nada.
-  * \return No devuelve nada.
-  *
-  */
+int mostrarTablaAscii();
+/** \brief Muestra la tabla ASCII.
+ *
+ * \param No recibe nada.
+ * \return No devuelve nada.
+ *
+ */
+
+
+int saludoDeApu();
+ /** \brief Escribe letra por letra el saludo de Apu con un delay (Sleep en windows.h).
+ *
+ * \param No recibe nada.
+ * \return No devuelve nada.
+ *
+ */
+
+
+int pantallaDeCarga();
+/** \brief Muestra una pantalla de carga.
+ *
+ * \param No recibe nada.
+ * \return No devuelve nada.
+ *
+ */

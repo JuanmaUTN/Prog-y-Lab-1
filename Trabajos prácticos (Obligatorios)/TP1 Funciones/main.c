@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Funciones.h"
+#include <windows.h>
 
 int main()
 {
@@ -8,15 +9,18 @@ int main()
     int opcion=0;
     int numero1 = 0;
     int numero2 = 0;
+    int time = 100;
 
+    pantallaDeCarga();
 
     while(seguir=='s')
     {
         printf("\n");
+        printf("============\n");
         printf("A: %d, B: %d. \n", numero1, numero2);
-        printf("======\n");
-        printf(" MENU.\n");
-        printf("======\n");
+        printf("============\n");
+        printf("    MENU.\n");
+        printf("============\n");
         printf("1- Ingresar 1er operando. (A=x)\n");
         printf("2- Ingresar 2do operando. (B=y)\n");
         printf("3- Calcular la suma. (A+B)\n");
@@ -83,7 +87,7 @@ int main()
                 seguir = 'n';
                 system("cls");
                 printf("\n");
-                printf("Gracias vuelva prontos! *Con voz de Apu*\n");
+                saludoDeApu();
                 break;
         }
 
