@@ -47,7 +47,7 @@ int dividir2Numeros(int a, int b)
 
 int multiplicar2Numeros(int a, int b)
 {
-    int resultado;
+    long long int resultado;
     resultado = a * b;
     printf("La multiplicacion da: %d.\n", resultado);
     return resultado;
@@ -62,7 +62,15 @@ int factorizar1Numero(int numIngr)
     {
         resultado = resultado * i;
     }
-    printf("La factorizacion de %d da %d.\n", numIngr, resultado);
+
+    if(resultado <= 0)
+    {
+        printf("La factorizacion de %d da error.\n", numIngr);
+    }
+    else
+    {
+        printf("La factorizacion de %d da %d.\n", numIngr, resultado);
+    }
     return resultado;
 }
 
@@ -81,80 +89,46 @@ int mostrarTablaAscii()
 
 int saludoDeApu()
 {
-    int time = 100;
+    char saludoApu[50] = "Gracias, vuelva prontos!";
+    int i;
     printf("*Voz de Apu*\n");
-    printf("G");
-    Sleep(time);
-    printf("r");
-    Sleep(time);
-    printf("a");
-    Sleep(time);
-    printf("c");
-    Sleep(time);
-    printf("i");
-    Sleep(time);
-    printf("a");
-    Sleep(time);
-    printf("s");
-    Sleep(time);
-    printf(",");
-    Sleep(time);
-    printf(" ");
-    Sleep(time);
-    printf("v");
-    Sleep(time);
-    printf("u");
-    Sleep(time);
-    printf("e");
-    Sleep(time);
-    printf("l");
-    Sleep(time);
-    printf("v");
-    Sleep(time);
-    printf("a");
-    Sleep(time);
-    printf(" ");
-    Sleep(time);
-    printf("p");
-    Sleep(time);
-    printf("r");
-    Sleep(time);
-    printf("o");
-    Sleep(time);
-    printf("n");
-    Sleep(time);
-    printf("t");
-    Sleep(time);
-    printf("o");
-    Sleep(time);
-    printf("s");
-    Sleep(time);
-    printf("!");
+    for(i = 0;i < 24;i ++)
+    {
+        printf("%c", saludoApu[i]);
+        Sleep(70);
+    }
     printf("\n");
-
-
     return 0;
 }
 
 int pantallaDeCarga()
 {
     int i;
-    int time = 100;
+    int time = 20;
     printf("Cargando programa... ");
-    for(i = 0;i < 100;)
+    for(i = 0;i < 100;i ++)
     {
-        i += 10;
         printf("(%d)", i);
         Sleep(time);
-        printf("\b\b\b\b");
+        if(i > 9)
+        {
+            printf("\b\b\b\b");
+        }
+        else
+        {
+            printf("\b\b\b");
+        }
     }
     system("cls");
-    printf("==================\n");
-    printf("Cargado con exito!\n");
-    printf("==================\n");
-    printf("Aguante el 1-C!!!\n");
-    printf("==================\n");
-    Sleep(1000);
+    printf("============================\n");
+    printf("      Cargado con exito!\n");
+    printf("============================\n");
+    printf("By: Juan Manuel Costas (1-C)\n");
+    printf("============================\n");
+    printf(" Profesor: German Scarafilo\n");
+    printf("============================\n");
+    printf("\n");
+    system("pause");
     system("cls");
     return 0;
 }

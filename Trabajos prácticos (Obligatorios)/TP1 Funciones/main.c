@@ -9,7 +9,6 @@ int main()
     int opcion=0;
     int numero1 = 0;
     int numero2 = 0;
-    int time = 100;
 
     pantallaDeCarga();
 
