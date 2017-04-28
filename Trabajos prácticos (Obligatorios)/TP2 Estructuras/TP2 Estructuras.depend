@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1491350732 source:c:\users\alumno\desktop\tp2 estructuras\funciones.c
+	"Funciones.h"
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+
+1491350732 c:\users\alumno\desktop\tp2 estructuras\funciones.h
+
+1493326062 source:c:\users\juanma\desktop\tp2 estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+	<string.h>
+	<conio.h>
+	<windows.h>
+	<ctype.h>
+
+1493325817 c:\users\juanma\desktop\tp2 estructuras\funciones.h
+
+1492985837 source:c:\users\juanma\desktop\utn\trabajos prácticos (obligatorios)\tp2 estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+	<string.h>
+	<conio.h>
+
+1491350732 c:\users\juanma\desktop\utn\trabajos prácticos (obligatorios)\tp2 estructuras\funciones.h
+
+1493228750 source:f:\programacion i\tp2 estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+	<string.h>
+	<conio.h>
+	<windows.h>
+
+1493226090 f:\programacion i\tp2 estructuras\funciones.h
+
+1493229024 source:f:\programacion i\tp2 estructuras\funciones.c
+	"Funciones.h"
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+
+1493340245 source:c:\users\juanma\desktop\tp2 estructuras\funciones.c
+	"Funciones.h"
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<ctype.h>
+
+1493299452 source:e:\programacion i\tp2 estructuras\funciones.c
+	"Funciones.h"
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+
+1493297090 e:\programacion i\tp2 estructuras\funciones.h
+
+1493299306 source:e:\programacion i\tp2 estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+	<string.h>
+	<conio.h>
+	<windows.h>
+
